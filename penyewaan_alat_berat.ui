@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form Penyewaan Alat Berat</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>TRANSAKSI PENYEWAAN:</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>ID Penyewaan</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_IdPenyewaan">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>Otomatis</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Tanggal Sewa</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QDateEdit" name="dateEdit_TglSewa">
+        <property name="displayFormat">
+         <string>yyyy-MM-dd</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Estimasi Kembali</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDateEdit" name="dateEdit_EstimasiKembali">
+        <property name="displayFormat">
+         <string>yyyy-MM-dd</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Lokasi Proyek</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QTextEdit" name="textEdit_Lokasi">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>60</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Konsumen</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <layout class="QHBoxLayout" name="layout_konsumen">
+        <item>
+         <widget class="QComboBox" name="comboBox_Konsumen"/>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Alat Berat</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QComboBox" name="comboBox_AlatBerat"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Operator</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="comboBox_Operator"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Status</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="comboBox_Status">
+        <item>
+         <property name="text">
+          <string>aktif</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>selesai</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>dipesan</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_Baru">
+        <property name="text">
+         <string>Baru</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Simpan">
+        <property name="text">
+         <string>Simpan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Ubah">
+        <property name="text">
+         <string>Ubah</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Hapus">
+        <property name="text">
+         <string>Hapus</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Keluar">
+        <property name="text">
+         <string>Keluar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

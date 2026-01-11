@@ -1,0 +1,25 @@
+[project]
+name = "PySide Widgets Project"
+
+[tool.pyside6-project]
+# Tambahkan file .ui dan .py yang baru ke daftar ini
+files = [
+    "Pendataan_Pembayaran_Sewa.ui",
+    "alat_berat.ui",
+    "buat_ui.py",
+    "cetak_laporan.ui",
+    "database.py",
+    "form.ui",
+    "konsumen.ui",
+    "logika_alat_berat.py",
+    "logika_cetak_laporan.py",
+    "logika_konsumen.py",
+    "logika_operator.py",
+    "logika_pendataan_pembayaran_sewa.py",
+    "logika_pengembalian_peralatan.py",
+    "logika_penyewaan_alat_berat.py",
+    "main.py",
+    "operator.ui",
+    "pengembalian_peralatan.ui",
+    "penyewaan_alat_berat.ui",
+]

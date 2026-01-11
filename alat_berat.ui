@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>632</width>
+    <height>656</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form Alat Berat</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Data Alat Berat</string>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Kode Alat</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_KodeAlat"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Nama Alat</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_NamaAlat"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Merk</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_Merk"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Jenis / Tipe</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboBox_Jenis"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Spesifikasi</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QTextEdit" name="textEdit_Spesifikasi"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Tahun Pembuatan</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEdit_Tahun"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Sewa Harian (Rp)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QLineEdit" name="lineEdit_Sewa"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Ket Pakai (Status)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="comboBox_Status"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_Baru">
+        <property name="text">
+         <string>Baru</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Simpan">
+        <property name="text">
+         <string>Simpan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Ubah">
+        <property name="text">
+         <string>Ubah</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Hapus">
+        <property name="text">
+         <string>Hapus</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Keluar">
+        <property name="text">
+         <string>Keluar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

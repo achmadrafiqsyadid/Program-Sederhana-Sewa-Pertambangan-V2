@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>main</class>
+ <widget class="QMainWindow" name="main">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>452</width>
+    <height>232</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>main</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>452</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu_Utama">
+    <property name="title">
+     <string>Menu Utama</string>
+    </property>
+    <addaction name="actionKonsumen"/>
+    <addaction name="actionOperator"/>
+    <addaction name="actionPenyewaan_Alat_Berat"/>
+    <addaction name="actionAlat_Berat"/>
+    <addaction name="actionPengembalian_Peralatan"/>
+    <addaction name="actionCetak_Laporan"/>
+    <addaction name="actionPendataan_Pembayaran_Sewa"/>
+   </widget>
+   <addaction name="menuMenu_Utama"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionKonsumen">
+   <property name="text">
+    <string>Konsumen</string>
+   </property>
+  </action>
+  <action name="actionOperator">
+   <property name="text">
+    <string>Operator</string>
+   </property>
+  </action>
+  <action name="actionPenyewaan_Alat_Berat">
+   <property name="text">
+    <string>Penyewaan Alat Berat</string>
+   </property>
+  </action>
+  <action name="actionAlat_Berat">
+   <property name="text">
+    <string>Alat Berat</string>
+   </property>
+  </action>
+  <action name="actionPengembalian_Peralatan">
+   <property name="text">
+    <string>Pengembalian Peralatan</string>
+   </property>
+  </action>
+  <action name="actionCetak_Laporan">
+   <property name="text">
+    <string>Cetak Laporan</string>
+   </property>
+  </action>
+  <action name="actionPendataan_Pembayaran_Sewa">
+   <property name="text">
+    <string>Pendataan Pembayaran Sewa</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

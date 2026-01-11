@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>816</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form Pembayaran Sewa</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Input Pembayaran</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Pilih ID Sewa (Belum Lunas):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="3">
+       <widget class="QComboBox" name="comboBox_IdSewa">
+        <property name="toolTip">
+         <string>Hanya menampilkan sewa yang sudah selesai tapi belum lunas</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Nama Perusahaan:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_NamaPerusahaan">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Unit Alat:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="lineEdit_NamaAlat">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Tanggal Bayar:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDateEdit" name="dateEdit_TglBayar">
+        <property name="displayFormat">
+         <string>yyyy-MM-dd</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Info Denda:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLineEdit" name="lineEdit_InfoDenda">
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Metode Pembayaran:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboBox_Metode">
+        <item>
+         <property name="text">
+          <string>Cash / Tunai</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Transfer Bank</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Total Bayar (Rp):</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLineEdit" name="lineEdit_TotalBayar">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Keterangan:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" colspan="3">
+       <widget class="QTextEdit" name="textEdit_Keterangan"/>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_Baru">
+       <property name="text">
+        <string>Baru</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Simpan">
+       <property name="text">
+        <string>Simpan Pembayaran</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_Keluar">
+       <property name="text">
+        <string>Keluar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <column>
+      <property name="text">
+       <string>ID Bayar</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Tgl Bayar</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ID Sewa</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Metode</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Total</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Keterangan</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
